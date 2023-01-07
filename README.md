@@ -56,7 +56,7 @@ CompositionLocalProvider(
 ### when checking status
 
 ```kotlin
-val keyboardState by mutableKeyboardStateSource. keyboardState()
+val keyboardState by mutableKeyboardStateSource.keyboardState()
 
 DisposableEffect(showKeyboard) {
     // Use keyboard state
