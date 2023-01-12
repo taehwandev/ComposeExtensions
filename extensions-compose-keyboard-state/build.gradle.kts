@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 import tech.thdev.gradle.dependencies.Publish
 
 plugins {
@@ -7,7 +9,7 @@ plugins {
 }
 
 ext["libraryName"] = "extensions-compose-keyboard-state"
-ext["libraryVersion"] = Publish.libraryVersion
+ext["libraryVersion"] = libs.versions.compose.asProvider().get()
 ext["description"] = Publish.description
 ext["url"] = Publish.publishUrl
 
