@@ -63,7 +63,7 @@ android {
 dependencies {
     implementation(libs.kotlin.stdlib)
 
-    implementation(libs.androidx.coreKtx)
+    implementation(libs.androidx.core)
     implementation(libs.google.material)
 
     implementation(libs.compose.activity)

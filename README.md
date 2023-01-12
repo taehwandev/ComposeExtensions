@@ -11,28 +11,28 @@ If you register the modifier, the keyboard closes when you touch the background,
 
 ## Download
 
-Use gradle - compose 1.3.2, foundation 1.3.1, compose compiler 1.3.2, kotlin 1.7.20
+Use gradle - compose 1.3.3, foundation 1.3.1, compose compiler 1.3.2, kotlin 1.7.20
 
 ```groovy
-implementation "tech.thdev:extensions-compose-keyboard-state:1.3.2"
+implementation "tech.thdev:extensions-compose-keyboard-state:1.3.3"
 ```
 
 Use gradle.kts
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:1.3.2")
+implementation("tech.thdev:extensions-compose-keyboard-state:1.3.3")
 ```
 
-Use gradle - compose 1.4.0-alpha03, compose compiler 1.4.0-alpha02, kotlin 1.7.21
+Use gradle - compose 1.4.0-alpha04, compose compiler 1.4.0-alpha02, kotlin 1.7.21
 
 ```groovy
-implementation "tech.thdev:extensions-compose-keyboard-state:1.4.0-alpha03"
+implementation "tech.thdev:extensions-compose-keyboard-state:1.4.0-alpha04"
 ```
 
 Use gradle.kts
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:1.4.0-alpha03")
+implementation("tech.thdev:extensions-compose-keyboard-state:1.4.0-alpha04")
 ```
 
 Release version are available in [Sonatyp's repository.](https://search.maven.org/search?q=tech.thdev)
