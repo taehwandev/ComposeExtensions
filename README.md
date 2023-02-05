@@ -11,7 +11,7 @@ If you register the modifier, the keyboard closes when you touch the background,
 
 ## Download - compose 1.4.0-alpha
 
-Use gradle - compose 1.4.0-alpha04, compose compiler 1.4.0-alpha02, kotlin 1.7.21
+Use gradle - compose 1.4.0-alpha05, compose compiler 1.4.0, kotlin 1.8.0
 
 ```groovy
 implementation "tech.thdev:extensions-compose-keyboard-state:1.4.0-alpha05"
