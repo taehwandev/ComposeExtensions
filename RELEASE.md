@@ -1,3 +1,13 @@
+## 1.4.0-rc01
+
+- Base - compose last beta
+  - compose 1.4.0-rc01
+  - compose compiler 1.4.3
+  - kotlin 1.8.10
+- Keyboard event change
+  - Use setOnApplyWindowInsetsListener
+  - Support floating keyboard show/hide event.
+
 ## 1.4.0-beta02
 
 - Base - compose last beta

@@ -24,7 +24,7 @@ coroutines = "1.6.4"
 # https://developer.android.com/jetpack/androidx/releases/annotation
 androidx-annotation = "1.5.0"
 # https://developer.android.com/jetpack/androidx/releases/core
-androidx-core = "1.10.0-alpha02"
+androidx-core = "1.9.0"
 # https://developer.android.com/jetpack/androidx/releases/appcompat
 androidx-appCompat = "1.7.0-alpha02"
 # https://developer.android.com/jetpack/androidx/releases/activity
@@ -40,12 +40,12 @@ androidx-multiDex = "2.0.1"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.4.0-beta02"
+compose = "1.4.0-rc01"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
 compose-compilerVersion = "1.4.3"
 
 # https://developer.android.com/jetpack/androidx/releases/compose-material3
-compose-material3 = "1.1.0-alpha07"
+compose-material3 = "1.1.0-alpha08"
 
 ## Google
 # https://github.com/material-components/material-components-android/releases

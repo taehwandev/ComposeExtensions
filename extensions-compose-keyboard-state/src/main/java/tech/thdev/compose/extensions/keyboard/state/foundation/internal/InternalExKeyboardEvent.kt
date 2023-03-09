@@ -1,36 +1,22 @@
 package tech.thdev.compose.extensions.keyboard.state.foundation.internal
 
-import android.graphics.Rect
-import android.view.View
-import android.view.ViewTreeObserver
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.runtime.produceState
 import androidx.compose.ui.platform.LocalView
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import tech.thdev.compose.extensions.keyboard.state.ExKeyboardState
-
-internal fun View.isKeyboardOpen(): Boolean {
-    val rect = Rect()
-    getWindowVisibleDisplayFrame(rect)
-    val screenHeight = rootView.height
-    val keypadHeight = screenHeight - rect.bottom
-    return keypadHeight > screenHeight * 0.15
-}
 
 @Composable
 internal fun rememberKeyboardOpen(): State<ExKeyboardState> {
     val view = LocalView.current
-
-    return produceState(initialValue = view.isKeyboardOpen().toState()) {
-        val viewTreeObserver = view.viewTreeObserver
-        val listener = ViewTreeObserver.OnGlobalLayoutListener {
-            value = view.isKeyboardOpen().toState()
+    return produceState(initialValue = false.toState()) {
+        ViewCompat.setOnApplyWindowInsetsListener(view.rootView) { _, listener ->
+            value = listener.isVisible(WindowInsetsCompat.Type.ime()).toState()
+            listener
         }
-        viewTreeObserver.addOnGlobalLayoutListener(listener)
-
-        awaitDispose {
-            viewTreeObserver.removeOnGlobalLayoutListener(listener)
-        }
+        awaitDispose {}
     }
 }
 

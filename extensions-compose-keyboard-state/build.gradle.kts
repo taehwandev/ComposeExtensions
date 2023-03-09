@@ -57,6 +57,7 @@ android {
 
 dependencies {
     implementation(libs.kotlin.stdlib)
+    implementation(libs.androidx.core)
     implementation(libs.compose.ui)
     implementation(libs.compose.runtime)
     implementation(libs.compose.foundation)
