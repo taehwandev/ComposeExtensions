@@ -69,4 +69,4 @@ DisposableEffect(showKeyboard) {
 
 ## Sample
 
-![image](images/sample.gif)
+![image](images/sample.png)
