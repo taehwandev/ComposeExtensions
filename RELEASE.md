@@ -1,3 +1,12 @@
+## 1.4.0-rc01-01
+
+- Base - compose last beta
+  - compose 1.4.0-rc01
+  - compose compiler 1.4.3
+  - kotlin 1.8.10
+- Keyboard event change 
+  - Fixed an error where padding was added at the bottom
+
 ## 1.4.0-rc01
 
 - Base - compose last beta
