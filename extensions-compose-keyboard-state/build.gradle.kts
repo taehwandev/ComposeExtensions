@@ -9,7 +9,7 @@ plugins {
 }
 
 ext["libraryName"] = "extensions-compose-keyboard-state"
-ext["libraryVersion"] = "${libs.versions.compose.asProvider().get()}-01" // todo next version remove.
+ext["libraryVersion"] = libs.versions.compose.asProvider().get()
 ext["description"] = Publish.description
 ext["url"] = Publish.publishUrl
 
