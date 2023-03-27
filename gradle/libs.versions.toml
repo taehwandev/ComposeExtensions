@@ -1,5 +1,5 @@
 [versions]
-buildToolsVersion = "33.0.0"
+buildToolsVersion = "33.0.2"
 compileSdk = "33"
 targetSdk = "33"
 minSdk = "23"
@@ -40,12 +40,12 @@ androidx-multiDex = "2.0.1"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.4.0-rc01"
+compose = "1.5.0-alpha01"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
-compose-compilerVersion = "1.4.3"
+compose-compilerVersion = "1.4.4"
 
 # https://developer.android.com/jetpack/androidx/releases/compose-material3
-compose-material3 = "1.1.0-alpha08"
+compose-material3 = "1.1.0-beta01"
 
 ## Google
 # https://github.com/material-components/material-components-android/releases

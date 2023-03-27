@@ -1,3 +1,14 @@
+## 1.4.0, 1.5.0-alpha01
+
+- Base - compose last beta
+  - compose 1.5.0-alpha01
+  - compose compiler 1.4.4
+  - kotlin 1.8.10
+- Base - compose last release version
+  - compose 1.4.0
+  - compose compiler 1.4.4
+  - kotlin 1.8.10
+
 ## 1.4.0-rc01-01
 
 - Base - compose last beta
