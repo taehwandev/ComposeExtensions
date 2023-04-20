@@ -10,7 +10,7 @@ hotfix = "0"
 versionCode = "1"
 
 ## Android gradle plugin
-androidGradlePlugin = "7.4.2"
+androidGradlePlugin = "8.0.0"
 
 ## kotlin
 # https://github.com/JetBrains/kotlin
@@ -40,12 +40,12 @@ androidx-multiDex = "2.0.1"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.5.0-alpha02"
+compose = "1.5.0-alpha03"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
-compose-compilerVersion = "1.4.5"
+compose-compilerVersion = "1.4.6"
 
 # https://developer.android.com/jetpack/androidx/releases/compose-material3
-compose-material3 = "1.1.0-beta02"
+compose-material3 = "1.1.0-rc01"
 
 ## Google
 # https://github.com/material-components/material-components-android/releases

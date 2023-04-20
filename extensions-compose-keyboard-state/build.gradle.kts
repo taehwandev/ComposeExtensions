@@ -37,6 +37,13 @@ android {
         }
     }
 
+    // AGP 8.0
+    publishing {
+        multipleVariants("release") {
+            allVariants()
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
