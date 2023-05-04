@@ -14,7 +14,7 @@ androidGradlePlugin = "8.0.0"
 
 ## kotlin
 # https://github.com/JetBrains/kotlin
-kotlin = "1.8.20"
+kotlin = "1.8.21"
 
 ## Coroutine
 # https://github.com/Kotlin/kotlinx.coroutines
@@ -40,9 +40,9 @@ androidx-multiDex = "2.0.1"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.5.0-alpha03"
+compose = "1.4.3"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
-compose-compilerVersion = "1.4.6"
+compose-compilerVersion = "1.4.7"
 
 # https://developer.android.com/jetpack/androidx/releases/compose-material3
 compose-material3 = "1.1.0-rc01"
