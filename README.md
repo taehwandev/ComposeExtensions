@@ -23,18 +23,18 @@ Use gradle.kts
 implementation("tech.thdev:extensions-compose-keyboard-state:1.5.0-alpha03")
 ```
 
-## Download - compose 1.4.2
+## Download - compose 1.4.3
 
-Use gradle - compose 1.4.2, compose compiler 1.4.6, kotlin 1.8.20
+Use gradle - compose 1.4.3, compose compiler 1.4.7, kotlin 1.8.21
 
 ```groovy
-implementation "tech.thdev:extensions-compose-keyboard-state:1.4.2"
+implementation "tech.thdev:extensions-compose-keyboard-state:1.4.3"
 ```
 
 Use gradle.kts
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:1.4.2")
+implementation("tech.thdev:extensions-compose-keyboard-state:1.4.3")
 ```
 
 Release version are available in [Sonatyp's repository.](https://search.maven.org/search?q=tech.thdev)
