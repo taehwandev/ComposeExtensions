@@ -10,7 +10,7 @@ hotfix = "0"
 versionCode = "1"
 
 ## Android gradle plugin
-androidGradlePlugin = "8.0.0"
+androidGradlePlugin = "8.0.2"
 
 ## kotlin
 # https://github.com/JetBrains/kotlin
@@ -18,52 +18,52 @@ kotlin = "1.8.21"
 
 ## Coroutine
 # https://github.com/Kotlin/kotlinx.coroutines
-coroutines = "1.6.4"
+coroutines = "1.7.1"
 
 ## AndroidX
 # https://developer.android.com/jetpack/androidx/releases/annotation
-androidx-annotation = "1.5.0"
+androidx-annotation = "1.6.0"
 # https://developer.android.com/jetpack/androidx/releases/core
-androidx-core = "1.9.0"
+androidx-core = "1.10.1"
 # https://developer.android.com/jetpack/androidx/releases/appcompat
 androidx-appCompat = "1.7.0-alpha02"
 # https://developer.android.com/jetpack/androidx/releases/activity
-androidx-activity = "1.7.0-beta01"
+androidx-activity = "1.7.2"
 # https://developer.android.com/jetpack/androidx/releases/fragment
-androidx-fragment = "1.6.0-alpha05"
+androidx-fragment = "1.6.0-rc01"
 # https://developer.android.com/jetpack/androidx/releases/vectordrawable
 androidx-vectorDrawable = "1.2.0-beta01"
 # https://developer.android.com/jetpack/androidx/releases/lifecycle
-androidx-lifecycleVersion = "2.6.0-beta01"
+androidx-lifecycleVersion = "2.6.1"
 # https://developer.android.com/jetpack/androidx/releases/multidex
 androidx-multiDex = "2.0.1"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.4.3"
+compose = "1.5.0-beta01"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
 compose-compilerVersion = "1.4.7"
 
 # https://developer.android.com/jetpack/androidx/releases/compose-material3
-compose-material3 = "1.1.0-rc01"
+compose-material3 = "1.2.0-alpha02"
 
 ## Google
 # https://github.com/material-components/material-components-android/releases
-google-material = "1.8.0"
+google-material = "1.9.0"
 
 ## Test
 # https://developer.android.com/jetpack/androidx/releases/test
-test-androidx-core = "1.5.0"
-test-androidx-runner = "1.5.2"
-test-androidx-junit = "1.1.5"
+test-androidx-core = "1.6.0-alpha01"
+test-androidx-runner = "1.6.0-alpha02"
+test-androidx-junit = "1.2.0-alpha01"
 # https://github.com/robolectric/robolectric
-test-robolectric = "4.9.2"
+test-robolectric = "4.10.3"
 # https://github.com/mockito/mockito
-test-mockito = "5.1.1"
+test-mockito = "5.3.1"
 # https://github.com/mockito/mockito-kotlin
 test-mockito-kotlin = "4.1.0"
 # https://github.com/mannodermaus/android-junit5
-test-junit5 = "5.8.2"
+test-junit5 = "5.9.3"
 
 [libraries]
 ## Kotlin
