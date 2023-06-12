@@ -40,7 +40,7 @@ androidx-multiDex = "2.0.1"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.5.0-beta01"
+compose = "1.5.0-beta02"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
 compose-compilerVersion = "1.4.7"
 
