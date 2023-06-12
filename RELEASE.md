@@ -1,7 +1,7 @@
 ## 1.5.0-beta01
 
 - Base - compose last beta
-  - compose 1.5.0-beta01
+  - compose 1.5.0-beta02
   - compose compiler 1.4.7
   - kotlin 1.8.21
 
