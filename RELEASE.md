@@ -1,4 +1,12 @@
-## 1.5.0-beta01
+## 1.6.0-alpha01
+
+- Base - compose last beta
+  - compose 1.6.0-alpha01
+  - compose compiler 1.4.7
+  - kotlin 1.8.21
+  - require android compiler 34
+
+## 1.5.0-beta02
 
 - Base - compose last beta
   - compose 1.5.0-beta02
