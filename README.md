@@ -9,15 +9,19 @@ If you register the modifier, the keyboard closes when you touch the background,
 - compose compiler 1.4.7(require java 11.)
 - kotlin 1.8.21
 
+## Download - compose 1.6.0-alpha01
+
+require android 14(target 34, compile 34)
+
+Use gradle - compose 1.6.0-alpha01, compose compiler 1.4.7, kotlin 1.8.21
+
+```kotlin
+implementation("tech.thdev:extensions-compose-keyboard-state:1.6.0-alpha01")
+```
+
 ## Download - compose 1.5.0-beta02
 
 Use gradle - compose 1.5.0-beta02, compose compiler 1.4.7, kotlin 1.8.21
-
-```groovy
-implementation "tech.thdev:extensions-compose-keyboard-state:1.5.0-beta02"
-```
-
-Use gradle.kts
 
 ```kotlin
 implementation("tech.thdev:extensions-compose-keyboard-state:1.5.0-beta02")
@@ -26,12 +30,6 @@ implementation("tech.thdev:extensions-compose-keyboard-state:1.5.0-beta02")
 ## Download - compose 1.4.3
 
 Use gradle - compose 1.4.3, compose compiler 1.4.7, kotlin 1.8.21
-
-```groovy
-implementation "tech.thdev:extensions-compose-keyboard-state:1.4.3"
-```
-
-Use gradle.kts
 
 ```kotlin
 implementation("tech.thdev:extensions-compose-keyboard-state:1.4.3")
