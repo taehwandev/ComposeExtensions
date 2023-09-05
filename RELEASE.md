@@ -1,3 +1,11 @@
+## 1.6.0-alpha04
+
+- Base - compose last alpha
+  - compose 1.6.0-alpha04
+  - compose compiler 1.5.3
+  - kotlin 1.9.10
+  - require android compiler 34
+
 ## 1.6.0-alpha03, 1.5.0
 
 - Base - compose last alpha
