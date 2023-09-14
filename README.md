@@ -5,7 +5,7 @@ Modifier for handling keyboard state.
 You can know the open/closed state of the keyboard.
 If you register the modifier, the keyboard closes when you touch the background, and you can know the status.
 
-- compose 1.6.0-alpha04
+- compose 1.6.0-alpha05
 - compose compiler 1.5.3
 - kotlin 1.9.10
 
@@ -13,10 +13,10 @@ If you register the modifier, the keyboard closes when you touch the background,
 
 require android 14(target 34, compile 34)
 
-Use gradle - compose 1.6.0-alpha04, compose compiler 1.5.3, kotlin 1.9.10
+Use gradle - compose 1.6.0-alpha05, compose compiler 1.5.3, kotlin 1.9.10
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:1.6.0-alpha04")
+implementation("tech.thdev:extensions-compose-keyboard-state:1.6.0-alpha05")
 ```
 
 ## Download - compose 1.5.0
