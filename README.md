@@ -19,12 +19,12 @@ Use gradle - compose 1.6.0-alpha06, compose compiler 1.5.3, kotlin 1.9.10
 implementation("tech.thdev:extensions-compose-keyboard-state:1.6.0-alpha06")
 ```
 
-## Download - compose 1.5.1
+## Download - compose 1.5.3
 
-Use gradle - compose 1.5.1, compose compiler 1.5.3, kotlin 1.9.0
+Use gradle - compose 1.5.3, compose compiler 1.5.3, kotlin 1.9.0
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:1.5.1")
+implementation("tech.thdev:extensions-compose-keyboard-state:1.5.3")
 ```
 
 Release version are available in [Sonatyp's repository.](https://search.maven.org/search?q=tech.thdev)
