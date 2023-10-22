@@ -9,7 +9,7 @@ If you register the modifier, the keyboard closes when you touch the background,
 - compose compiler 1.5.3
 - kotlin 1.9.10
 
-## Download - compose 1.6.0-alpha07
+## Download - compose 1.6.0-alpha
 
 require android 14(target 34, compile 34)
 
