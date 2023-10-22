@@ -28,9 +28,9 @@ androidx-core = "1.12.0"
 # https://developer.android.com/jetpack/androidx/releases/appcompat
 androidx-appCompat = "1.7.0-alpha03"
 # https://developer.android.com/jetpack/androidx/releases/activity
-androidx-activity = "1.7.2"
+androidx-activity = "1.8.0"
 # https://developer.android.com/jetpack/androidx/releases/fragment
-androidx-fragment = "1.7.0-alpha05"
+androidx-fragment = "1.7.0-alpha06"
 # https://developer.android.com/jetpack/androidx/releases/vectordrawable
 androidx-vectorDrawable = "1.2.0-beta01"
 # https://developer.android.com/jetpack/androidx/releases/lifecycle
@@ -40,16 +40,16 @@ androidx-multiDex = "2.0.1"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.6.0-alpha07"
+compose = "1.6.0-alpha08"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
 compose-compilerVersion = "1.5.3"
 
 # https://developer.android.com/jetpack/androidx/releases/compose-material3
-compose-material3 = "1.2.0-alpha09"
+compose-material3 = "1.2.0-alpha10"
 
 ## Google
 # https://github.com/material-components/material-components-android/releases
-google-material = "1.9.0"
+google-material = "1.10.0"
 
 ## Test
 # https://developer.android.com/jetpack/androidx/releases/test
@@ -59,7 +59,7 @@ test-androidx-junit = "1.2.0-alpha01"
 # https://github.com/robolectric/robolectric
 test-robolectric = "4.10.3"
 # https://github.com/mockito/mockito
-test-mockito = "5.5.0"
+test-mockito = "5.6.0"
 # https://github.com/mockito/mockito-kotlin
 test-mockito-kotlin = "5.1.0"
 # https://github.com/mannodermaus/android-junit5
