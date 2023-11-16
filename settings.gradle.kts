@@ -17,7 +17,8 @@ dependencyResolutionManagement {
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
-rootProject.name = "ComposeKeyboardState"
+rootProject.name = "ComposeExtensions"
 
 include(":app")
 include(":extensions-compose-keyboard-state")
+include(":extensions-compose-system-ui-controller")
