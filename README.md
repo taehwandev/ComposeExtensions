@@ -5,26 +5,26 @@ Modifier for handling keyboard state.
 You can know the open/closed state of the keyboard.
 If you register the modifier, the keyboard closes when you touch the background, and you can know the status.
 
-- compose 1.6.0-alpha078
-- compose compiler 1.5.3
-- kotlin 1.9.10
+- compose 1.6.0-beta01
+- compose compiler 1.5.4
+- kotlin 1.9.20
 
-## Download - compose 1.6.0-alpha
+## Download - compose 1.6.0-beta
 
 require android 14(target 34, compile 34)
 
-Use gradle - compose 1.6.0-alpha08, compose compiler 1.5.3, kotlin 1.9.10
+Use gradle - compose 1.6.0-beta01, compose compiler 1.5.4, kotlin 1.9.20
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:1.6.0-alpha08")
+implementation("tech.thdev:extensions-compose-keyboard-state:1.6.0-beta01")
 ```
 
-## Download - compose 1.5.3
+## Download - compose 1.5.4
 
-Use gradle - compose 1.5.3, compose compiler 1.5.3, kotlin 1.9.0
+Use gradle - compose 1.5.4, compose compiler 1.5.4, kotlin 1.9.20
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:1.5.3")
+implementation("tech.thdev:extensions-compose-keyboard-state:1.5.4")
 ```
 
 Release version are available in [Sonatyp's repository.](https://search.maven.org/search?q=tech.thdev)
