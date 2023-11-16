@@ -1,3 +1,9 @@
+## New add extensions
+
+- compose system ui controller
+  - 1.6.0-beta01
+  - 1.5.4
+
 ## 1.6.0-beta01
 
 - Base - compose last alpha

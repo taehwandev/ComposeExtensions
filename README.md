@@ -1,9 +1,15 @@
 ## Summary
 
-Modifier for handling keyboard state.
+Android Compose extension.
 
-You can know the open/closed state of the keyboard.
-If you register the modifier, the keyboard closes when you touch the background, and you can know the status.
+
+## library
+
+- Keyboard show/hide extensions.
+- Android System UI Controller
+
+
+## Compose version info 
 
 - compose 1.6.0-beta01
 - compose compiler 1.5.4
@@ -17,6 +23,7 @@ Use gradle - compose 1.6.0-beta01, compose compiler 1.5.4, kotlin 1.9.20
 
 ```kotlin
 implementation("tech.thdev:extensions-compose-keyboard-state:1.6.0-beta01")
+implementation("tech.thdev:extensions-compose-system-ui-controller:1.6.0-beta01")
 ```
 
 ## Download - compose 1.5.4
@@ -25,11 +32,12 @@ Use gradle - compose 1.5.4, compose compiler 1.5.4, kotlin 1.9.20
 
 ```kotlin
 implementation("tech.thdev:extensions-compose-keyboard-state:1.5.4")
+implementation("tech.thdev:extensions-compose-system-ui-controller:1.5.4")
 ```
 
 Release version are available in [Sonatyp's repository.](https://search.maven.org/search?q=tech.thdev)
 
-## Use Code
+## Use keyboard extensions
 
 ### Use scaffold modifier
 
@@ -54,6 +62,25 @@ DisposableEffect(showKeyboard) {
     // Use keyboard state
     onDispose {
     }
+}
+```
+
+## Use system ui controller
+
+```kotlin
+// Remember a SystemUiController
+val systemUiController = rememberExSystemUiController()
+
+DisposableEffect(systemUiController) {
+    // Update all of the system bar colors to be transparent, and use
+    // dark icons if we're in light theme
+    systemUiController.setSystemBarsColor(
+        color = Color.Transparent,
+    )
+
+    // setStatusBarColor() and setNavigationBarColor() also exist
+
+    onDispose {}
 }
 ```
 
