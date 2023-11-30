@@ -1,3 +1,11 @@
+## 1.6.0-beta02
+
+- Base - compose last alpha
+  - compose 1.6.0-beta02
+  - compose compiler 1.5.5
+  - kotlin 1.9.20
+  - require android compiler 34
+
 ## New add extensions
 
 - compose system ui controller
