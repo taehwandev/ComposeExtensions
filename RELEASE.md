@@ -1,3 +1,11 @@
+## 1.6.0-beta03
+
+- Base - compose last alpha
+  - compose 1.6.0-beta03
+  - compose compiler 1.5.6
+  - kotlin 1.9.21
+  - require android compiler 34
+
 ## 1.6.0-beta02
 
 - Base - compose last alpha
