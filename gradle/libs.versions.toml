@@ -10,11 +10,11 @@ hotfix = "0"
 versionCode = "1"
 
 ## Android gradle plugin
-androidGradlePlugin = "8.2.0"
+androidGradlePlugin = "8.2.1"
 
 ## kotlin
 # https://github.com/JetBrains/kotlin
-kotlin = "1.9.21"
+kotlin = "1.9.22"
 
 ## Coroutine
 # https://github.com/Kotlin/kotlinx.coroutines
@@ -30,22 +30,22 @@ androidx-appCompat = "1.7.0-alpha03"
 # https://developer.android.com/jetpack/androidx/releases/activity
 androidx-activity = "1.8.2"
 # https://developer.android.com/jetpack/androidx/releases/fragment
-androidx-fragment = "1.7.0-alpha07"
+androidx-fragment = "1.7.0-alpha08"
 # https://developer.android.com/jetpack/androidx/releases/vectordrawable
 androidx-vectorDrawable = "1.2.0-beta01"
 # https://developer.android.com/jetpack/androidx/releases/lifecycle
-androidx-lifecycleVersion = "2.6.2"
+androidx-lifecycleVersion = "2.7.0"
 # https://developer.android.com/jetpack/androidx/releases/multidex
 androidx-multiDex = "2.0.1"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.6.0-beta03"
+compose = "1.6.0-rc01"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
-compose-compilerVersion = "1.5.6"
+compose-compilerVersion = "1.5.8"
 
 # https://developer.android.com/jetpack/androidx/releases/compose-material3
-compose-material3 = "1.2.0-beta01"
+compose-material3 = "1.2.0-beta02"
 
 ## Google
 # https://github.com/material-components/material-components-android/releases
@@ -59,9 +59,9 @@ test-androidx-junit = "1.2.0-alpha02"
 # https://github.com/robolectric/robolectric
 test-robolectric = "4.11.1"
 # https://github.com/mockito/mockito
-test-mockito = "5.7.0"
+test-mockito = "5.8.0"
 # https://github.com/mockito/mockito-kotlin
-test-mockito-kotlin = "5.1.0"
+test-mockito-kotlin = "5.2.1"
 # https://github.com/mannodermaus/android-junit5
 test-junit5 = "5.10.0"
 
