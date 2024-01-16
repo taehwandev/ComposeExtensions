@@ -44,7 +44,7 @@ class MainActivity : ComponentActivity() {
                             .fillMaxSize()
                             .removeFocusWhenKeyboardIsHidden()
                     ) {
-                        // test
+                        // test aaa
                         Greeting(
                             modifier = Modifier
                                 .fillMaxSize()
