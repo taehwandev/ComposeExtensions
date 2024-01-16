@@ -29,17 +29,16 @@ jobs:
 
       - name: set up Android SDK
         uses: android-actions/setup-android@v3
-        
+
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-        
+
       - name: Clean the project
         run: ./gradlew clean
 
       - name: release
         run: ./gradlew extensions-compose-keyboard-state:publishAllPublicationsToSonatypeRepository --no-build-cache
 
-jobs:
   build_system_ui:
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'release')
@@ -63,10 +62,10 @@ jobs:
 
       - name: set up Android SDK
         uses: android-actions/setup-android@v3
-        
+
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-        
+
       - name: Clean the project
         run: ./gradlew clean
 
