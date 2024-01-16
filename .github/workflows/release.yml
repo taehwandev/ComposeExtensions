@@ -1,0 +1,74 @@
+name: New release
+
+on:
+  pull_request:
+    branches: [ main ]
+    types: [ closed ]
+
+jobs:
+  build_keyboard:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'release')
+
+    env:
+      OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
+      OSSRH_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
+      SIGNING_KEY_ID: ${{ secrets.SIGNING_KEY_ID }}
+      SIGNING_PASSWORD: ${{ secrets.SIGNING_PASSWORD }}
+      SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'corretto'
+          java-version: '17'
+
+      - name: set up Android SDK
+        uses: android-actions/setup-android@v3
+        
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+        
+      - name: Clean the project
+        run: ./gradlew clean
+
+      - name: release
+        run: ./gradlew extensions-compose-keyboard-state:publishAllPublicationsToSonatypeRepository --no-build-cache
+
+jobs:
+  build_system_ui:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'release')
+
+    env:
+      OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
+      OSSRH_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
+      SIGNING_KEY_ID: ${{ secrets.SIGNING_KEY_ID }}
+      SIGNING_PASSWORD: ${{ secrets.SIGNING_PASSWORD }}
+      SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'corretto'
+          java-version: '17'
+
+      - name: set up Android SDK
+        uses: android-actions/setup-android@v3
+        
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+        
+      - name: Clean the project
+        run: ./gradlew clean
+
+      - name: release
+        run: ./gradlew extensions-compose-system-ui-controller:publishAllPublicationsToSonatypeRepository --no-build-cache
