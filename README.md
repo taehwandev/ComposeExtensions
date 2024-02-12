@@ -15,7 +15,7 @@ Android Compose extension.
 - compose compiler 1.5.8
 - kotlin 1.9.22
 
-## Download - compose 1.6.0-rc01
+## Download alpha - compose 1.6.0-rc01
 
 require android 14(target 34, compile 34)
 
@@ -26,13 +26,13 @@ implementation("tech.thdev:extensions-compose-keyboard-state:1.6.0-rc01")
 implementation("tech.thdev:extensions-compose-system-ui-controller:1.6.0-rc01")
 ```
 
-## Download - compose 1.5.4
+## Download Stable - compose 1.6.1
 
-Use gradle - compose 1.5.4, compose compiler 1.5.4, kotlin 1.9.20
+Use gradle - compose 1.6.1, compose compiler 1.5.9, kotlin 1.9.22
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:1.5.4")
-implementation("tech.thdev:extensions-compose-system-ui-controller:1.5.4")
+implementation("tech.thdev:extensions-compose-keyboard-state:1.6.1")
+implementation("tech.thdev:extensions-compose-system-ui-controller:1.6.1")
 ```
 
 Release version are available in [Sonatyp's repository.](https://search.maven.org/search?q=tech.thdev)

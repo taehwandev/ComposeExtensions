@@ -10,7 +10,7 @@ hotfix = "0"
 versionCode = "1"
 
 ## Android gradle plugin
-androidGradlePlugin = "8.2.1"
+androidGradlePlugin = "8.2.2"
 
 ## kotlin
 # https://github.com/JetBrains/kotlin
@@ -30,22 +30,20 @@ androidx-appCompat = "1.7.0-alpha03"
 # https://developer.android.com/jetpack/androidx/releases/activity
 androidx-activity = "1.8.2"
 # https://developer.android.com/jetpack/androidx/releases/fragment
-androidx-fragment = "1.7.0-alpha08"
+androidx-fragment = "1.7.0-alpha10"
 # https://developer.android.com/jetpack/androidx/releases/vectordrawable
 androidx-vectorDrawable = "1.2.0-beta01"
 # https://developer.android.com/jetpack/androidx/releases/lifecycle
 androidx-lifecycleVersion = "2.7.0"
-# https://developer.android.com/jetpack/androidx/releases/multidex
-androidx-multiDex = "2.0.1"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.6.0-rc01"
+compose = "1.6.1"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
-compose-compilerVersion = "1.5.8"
+compose-compilerVersion = "1.5.9"
 
 # https://developer.android.com/jetpack/androidx/releases/compose-material3
-compose-material3 = "1.2.0-beta02"
+compose-material3 = "1.2.0"
 
 ## Google
 # https://github.com/material-components/material-components-android/releases
@@ -53,15 +51,15 @@ google-material = "1.11.0"
 
 ## Test
 # https://developer.android.com/jetpack/androidx/releases/test
-test-androidx-core = "1.6.0-alpha04"
-test-androidx-runner = "1.6.0-alpha05"
-test-androidx-junit = "1.2.0-alpha02"
+test-androidx-core = "1.6.0-alpha05"
+test-androidx-runner = "1.6.0-alpha06"
+test-androidx-junit = "1.2.0-alpha03"
 # https://github.com/robolectric/robolectric
 test-robolectric = "4.11.1"
 # https://github.com/mockito/mockito
-test-mockito = "5.8.0"
+test-mockito = "5.10.0"
 # https://github.com/mockito/mockito-kotlin
-test-mockito-kotlin = "5.2.1"
+test-mockito-kotlin = "5.3.0"
 # https://github.com/mannodermaus/android-junit5
 test-junit5 = "5.10.0"
 
@@ -81,7 +79,6 @@ androidx-activity = { module = "androidx.activity:activity-ktx", version.ref = "
 androidx-fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "androidx-fragment" }
 androidx-vectorDrawable = { module = "androidx.vectordrawable:vectordrawable", version.ref = "androidx-vectorDrawable" }
 androidx-lifecycleCommonJava8 = { module = "androidx.lifecycle:lifecycle-common-java8", version.ref = "androidx-lifecycleVersion" }
-androidx-multiDex = { module = "androidx.multidex:multidex", version.ref = "androidx-multiDex" }
 
 ## Compose
 compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
