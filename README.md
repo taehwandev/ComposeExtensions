@@ -11,19 +11,19 @@ Android Compose extension.
 
 ## Compose version info 
 
-- compose 1.6.0-rc01
-- compose compiler 1.5.8
+- compose 1.7.0-alpha02
+- compose compiler 1.5.9
 - kotlin 1.9.22
 
-## Download alpha - compose 1.6.0-rc01
+## Download alpha - compose 1.7.0-alpha02
 
 require android 14(target 34, compile 34)
 
-Use gradle - compose 1.6.0-rc01, compose compiler 1.5.8, kotlin 1.9.22
+Use gradle - compose 1.7.0-alpha02, compose compiler 1.5.9, kotlin 1.9.22
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:1.6.0-rc01")
-implementation("tech.thdev:extensions-compose-system-ui-controller:1.6.0-rc01")
+implementation("tech.thdev:extensions-compose-keyboard-state:1.7.0-alpha02")
+implementation("tech.thdev:extensions-compose-system-ui-controller:1.7.0-alpha02")
 ```
 
 ## Download Stable - compose 1.6.1
