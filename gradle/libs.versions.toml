@@ -38,7 +38,7 @@ androidx-lifecycleVersion = "2.7.0"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.6.2"
+compose = "1.7.0-alpha03"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
 compose-compilerVersion = "1.5.10"
 
