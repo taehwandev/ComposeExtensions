@@ -1,3 +1,11 @@
+## 1.7.0-alpha04
+
+- Base - compose last alpha
+  - compose 1.7.0-alpha04
+  - compose compiler 1.5.10
+  - kotlin 1.9.22
+  - require android compiler 34
+
 ## 1.6.3
 
 - Base - compose last
