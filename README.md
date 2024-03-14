@@ -18,13 +18,13 @@ implementation("tech.thdev:extensions-compose-keyboard-state:1.7.0-alpha03")
 implementation("tech.thdev:extensions-compose-system-ui-controller:1.7.0-alpha03")
 ```
 
-## Download Stable - compose 1.6.2
+## Download Stable - compose 1.6.3
 
-Use gradle - compose 1.6.2, compose compiler 1.5.10, kotlin 1.9.22
+Use gradle - compose 1.6.3, compose compiler 1.5.10, kotlin 1.9.22
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:1.6.2")
-implementation("tech.thdev:extensions-compose-system-ui-controller:1.6.2")
+implementation("tech.thdev:extensions-compose-keyboard-state:1.6.3")
+implementation("tech.thdev:extensions-compose-system-ui-controller:1.6.3")
 ```
 
 Release version are available in [Sonatyp's repository.](https://search.maven.org/search?q=tech.thdev)
