@@ -10,11 +10,11 @@ hotfix = "0"
 versionCode = "1"
 
 ## Android gradle plugin
-androidGradlePlugin = "8.3.0"
+androidGradlePlugin = "8.3.1"
 
 ## kotlin
 # https://github.com/JetBrains/kotlin
-kotlin = "1.9.22"
+kotlin = "1.9.23"
 
 ## Coroutine
 # https://github.com/Kotlin/kotlinx.coroutines
@@ -30,7 +30,7 @@ androidx-appCompat = "1.7.0-alpha03"
 # https://developer.android.com/jetpack/androidx/releases/activity
 androidx-activity = "1.8.2"
 # https://developer.android.com/jetpack/androidx/releases/fragment
-androidx-fragment = "1.7.0-alpha10"
+androidx-fragment = "1.7.0-beta01"
 # https://developer.android.com/jetpack/androidx/releases/vectordrawable
 androidx-vectorDrawable = "1.2.0-beta01"
 # https://developer.android.com/jetpack/androidx/releases/lifecycle
@@ -38,9 +38,9 @@ androidx-lifecycleVersion = "2.7.0"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.7.0-alpha04"
+compose = "1.6.4"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
-compose-compilerVersion = "1.5.10"
+compose-compilerVersion = "1.5.11"
 
 # https://developer.android.com/jetpack/androidx/releases/compose-material3
 compose-material3 = "1.2.1"
