@@ -30,7 +30,7 @@ androidx-appCompat = "1.7.0-alpha03"
 # https://developer.android.com/jetpack/androidx/releases/activity
 androidx-activity = "1.8.2"
 # https://developer.android.com/jetpack/androidx/releases/fragment
-androidx-fragment = "1.7.0-beta01"
+androidx-fragment = "1.7.0-rc01"
 # https://developer.android.com/jetpack/androidx/releases/vectordrawable
 androidx-vectorDrawable = "1.2.0-beta01"
 # https://developer.android.com/jetpack/androidx/releases/lifecycle
@@ -38,7 +38,7 @@ androidx-lifecycleVersion = "2.7.0"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.7.0-alpha05"
+compose = "1.6.5"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
 compose-compilerVersion = "1.5.11"
 
@@ -61,7 +61,7 @@ test-mockito = "5.11.0"
 # https://github.com/mockito/mockito-kotlin
 test-mockito-kotlin = "5.3.0"
 # https://github.com/mannodermaus/android-junit5
-test-junit5 = "5.10.0"
+test-junit5 = "5.10.2"
 
 [libraries]
 ## Kotlin
