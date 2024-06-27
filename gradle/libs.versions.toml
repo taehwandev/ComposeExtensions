@@ -38,7 +38,7 @@ androidx-lifecycleVersion = "2.8.2"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.6.8"
+compose = "1.7.0-beta04"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
 compose-compilerVersion = "1.5.14"
 
@@ -51,9 +51,9 @@ google-material = "1.13.0-alpha03"
 
 ## Test
 # https://developer.android.com/jetpack/androidx/releases/test
-test-androidx-core = "1.6.0"
-test-androidx-runner = "1.6.0"
-test-androidx-junit = "1.2.0"
+test-androidx-core = "1.6.1"
+test-androidx-runner = "1.6.1"
+test-androidx-junit = "1.2.1"
 # https://github.com/robolectric/robolectric
 test-robolectric = "4.12.2"
 # https://github.com/mockito/mockito
