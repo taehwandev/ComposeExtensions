@@ -1,3 +1,11 @@
+## 1.6.8
+
+- Base - compose last
+  - compose 1.6.8
+  - compose compiler 1.5.14
+  - kotlin 1.9.24
+  - require android compiler 35
+
 ## 1.7.0-beta02
 
 - Base - compose last beta
