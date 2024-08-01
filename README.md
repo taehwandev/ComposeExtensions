@@ -7,15 +7,15 @@ Android Compose extension.
 - Keyboard show/hide extensions.
 - Android System UI Controller
 
-## Download alpha - compose 1.7.0-beta05
+## Download alpha - compose 1.7.0-beta06
 
 require android 14(target 35, compile 35)
 
-Use gradle - compose 1.7.0-beta05, compose compiler 1.5.14, kotlin 1.9.24
+Use gradle - compose 1.7.0-beta06, compose compiler 1.5.14, kotlin 1.9.24
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:1.7.0-beta05")
-implementation("tech.thdev:extensions-compose-system-ui-controller:1.7.0-beta05")
+implementation("tech.thdev:extensions-compose-keyboard-state:1.7.0-beta06")
+implementation("tech.thdev:extensions-compose-system-ui-controller:1.7.0-beta06")
 ```
 
 ## Download Stable - compose 1.6.8
