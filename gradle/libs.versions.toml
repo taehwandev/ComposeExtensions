@@ -28,22 +28,22 @@ androidx-core = "1.13.1"
 # https://developer.android.com/jetpack/androidx/releases/appcompat
 androidx-appCompat = "1.7.0"
 # https://developer.android.com/jetpack/androidx/releases/activity
-androidx-activity = "1.9.1"
+androidx-activity = "1.9.2"
 # https://developer.android.com/jetpack/androidx/releases/fragment
-androidx-fragment = "1.8.2"
+androidx-fragment = "1.8.3"
 # https://developer.android.com/jetpack/androidx/releases/vectordrawable
 androidx-vectorDrawable = "1.2.0"
 # https://developer.android.com/jetpack/androidx/releases/lifecycle
-androidx-lifecycleVersion = "2.8.4"
+androidx-lifecycleVersion = "2.8.5"
 
 ## Compose
 # https://developer.android.com/jetpack/androidx/releases/compose
-compose = "1.7.0-rc01"
+compose = "1.7.0"
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
 compose-compilerVersion = "1.5.15"
 
 # https://developer.android.com/jetpack/androidx/releases/compose-material3
-compose-material3 = "1.3.0-rc01"
+compose-material3 = "1.3.0"
 
 ## Google
 # https://github.com/material-components/material-components-android/releases
@@ -57,12 +57,12 @@ test-androidx-junit = "1.2.1"
 # https://github.com/robolectric/robolectric
 test-robolectric = "4.13"
 # https://github.com/mockito/mockito
-test-mockito = "5.12.0"
+test-mockito = "5.13.0"
 # https://github.com/mockito/mockito-kotlin
 test-mockito-kotlin = "5.4.0"
 # https://github.com/mannodermaus/android-junit5
 # https://github.com/junit-team/junit5
-test-junit5 = "5.10.3"
+test-junit5 = "5.11.0"
 
 [libraries]
 ## Kotlin
