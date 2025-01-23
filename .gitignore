@@ -9,3 +9,4 @@
 .cxx
 local.properties
 build.txt
+/build-logic/convention/build
