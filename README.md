@@ -6,14 +6,16 @@ Android Compose extension.
 
 - Keyboard show/hide extensions.
 - Android System UI Controller
+- ExWebView(View WebView).
 
-## Download Stable - compose 1.7.0
+## Download Stable - compose 25.1.0
 
-Use gradle - compose 1.7.0, compose compiler 1.5.15, kotlin 1.9.25
+Use gradle - compose 1.7.6, compose compiler k2, kotlin 2.0.21
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:1.7.0")
-implementation("tech.thdev:extensions-compose-system-ui-controller:1.7.0")
+implementation("tech.thdev:extensions-compose-keyboard-state:25.1.0")
+implementation("tech.thdev:extensions-compose-system-ui-controller:25.1.0")
+implementation("tech.thdev:extensions-compose-web-view:25.1.0")
 ```
 
 Release version are available in [Sonatyp's repository.](https://search.maven.org/search?q=tech.thdev)
@@ -63,6 +65,14 @@ DisposableEffect(systemUiController) {
 
     onDispose {}
 }
+```
+
+## Use WebView
+
+```kotlin
+ExWebView(
+    /* */
+)
 ```
 
 ## Sample

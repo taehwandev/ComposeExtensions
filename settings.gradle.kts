@@ -31,3 +31,4 @@ rootProject.name = "ComposeExtensions"
 include(":app")
 include(":extensions-compose-keyboard-state")
 include(":extensions-compose-system-ui-controller")
+include(":extensions-compose-web-view")
