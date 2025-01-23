@@ -1,3 +1,12 @@
+## 25.1.0
+
+- Change the version numbering to year.month.release order.
+- Based on compose 1.7.6.
+- Modify based on kotlin 2.0.21.
+- Apply compose k2 compiler.
+- Add WebView functionality.
+- Convert build-logic
+
 ## 1.7.0
 
 - Base - compose last beta
