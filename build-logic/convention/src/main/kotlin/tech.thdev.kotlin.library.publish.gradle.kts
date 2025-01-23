@@ -1,9 +1,8 @@
 import org.jetbrains.kotlin.konan.properties.Properties
 
 plugins {
-    kotlin("jvm")
-    id("maven-publish")
-    id("signing")
+    `maven-publish`
+    `signing`
 }
 
 // Stub secrets to let the project sync and build without the publication values set up
@@ -19,7 +18,10 @@ val javadocJar by tasks.registering(Jar::class) {
 
 val sourceJar by tasks.registering(Jar::class) {
     archiveClassifier.set("sources")
-    from(sourceSets.main.get().allSource)
+    // build.gradle.kts 파일에서
+    val sourceSets = project.extensions.getByName("sourceSets") as SourceSetContainer
+    val mainSourceSet = sourceSets.getByName("main")
+    from(mainSourceSet.allSource.srcDirs)
 }
 
 fun getExtraString(name: String) = ext[name]?.toString()

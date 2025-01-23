@@ -1,30 +1,22 @@
-@file:Suppress("UnstableApiUsage")
-
-import tech.thdev.gradle.dependencies.Publish
+import tech.thdev.gradle.configureComposeFeature
 
 plugins {
-    id("com.android.library")
-    kotlin("android")
-    id("lib-publish-android")
+    alias(libs.plugins.tech.thdev.android.library)
+    alias(libs.plugins.tech.thdev.android.library.publish)
 }
 
+val (majorVersion, minorVersion, patchVersion, code) = getVersionInfo()
+
 ext["libraryName"] = "extensions-compose-keyboard-state"
-ext["libraryVersion"] = libs.versions.compose.asProvider().get()
-ext["description"] = Publish.description
-ext["url"] = Publish.publishUrl
+ext["libraryVersion"] = "$majorVersion.$minorVersion.$patchVersion"
+ext["description"] = Publish.DESCRIPTION
+ext["url"] = Publish.PUBLISH_URL
+
+setNamespace("compose.extensions.keyboard.state")
+
+configureComposeFeature()
 
 android {
-    namespace = "tech.thdev.compose.extensions.keyboard.state"
-    buildToolsVersion = libs.versions.buildToolsVersion.get()
-    compileSdk = libs.versions.compileSdk.get().toInt()
-
-    defaultConfig {
-        minSdk =  libs.versions.minSdk.get().toInt()
-        targetSdk = libs.versions.targetSdk.get().toInt()
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
     buildTypes {
         getByName("debug") {
             isMinifyEnabled = false
@@ -42,23 +34,6 @@ android {
         multipleVariants("release") {
             allVariants()
         }
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-
-    kotlinOptions {
-        jvmTarget = "17"
-    }
-
-    buildFeatures {
-        compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.compose.compilerVersion.get()
     }
 }
 

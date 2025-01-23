@@ -1,25 +1,21 @@
 plugins {
-    id("com.android.application")
-    kotlin("android")
+    alias(libs.plugins.tech.thdev.android.application)
 }
+setNamespace("compose.extensions")
 
 android {
-    namespace = "tech.thdev.composekeyboardstate"
-    buildToolsVersion = libs.versions.buildToolsVersion.get()
-    compileSdk = libs.versions.compileSdk.get().toInt()
+    val (majorVersion, minorVersion, patchVersion, code) = getVersionInfo()
 
     defaultConfig {
+        applicationId = "tech.thdev.compose.extensions"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = libs.versions.versionCode.get().toInt()
-        versionName = "${libs.versions.major.get()}.${libs.versions.minor.get()}.${libs.versions.hotfix.get()}"
-
+        vectorDrawables.useSupportLibrary = true
+        versionCode = code
+        versionName = "$majorVersion.$minorVersion.$patchVersion"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary = true
-        }
+        multiDexEnabled = true
     }
-
 
     buildTypes {
         getByName("debug") {
@@ -31,32 +27,6 @@ android {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-
-    kotlinOptions {
-        jvmTarget = "17"
-    }
-
-    buildFeatures {
-        compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.compose.compilerVersion.get()
-    }
-
-    packaging {
-        resources.excludes.addAll(
-            listOf(
-                "META-INF/AL2.0",
-                "META-INF/LGPL2.1",
-            )
-        )
     }
 }
 

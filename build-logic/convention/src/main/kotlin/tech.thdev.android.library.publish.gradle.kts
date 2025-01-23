@@ -1,11 +1,11 @@
 import com.android.build.gradle.api.AndroidSourceSet
 import org.gradle.kotlin.dsl.getByName
 import org.jetbrains.kotlin.konan.properties.Properties
+import tech.thdev.gradle.extensions.androidExtension
 
 plugins {
-    id("com.android.library")
-    id("maven-publish")
-    id("signing")
+    `maven-publish`
+    `signing`
 }
 
 // Stub secrets to let the project sync and build without the publication values set up
@@ -21,10 +21,11 @@ val javadocJar by tasks.registering(Jar::class) {
 
 val androidSourceJar by tasks.registering(Jar::class) {
     archiveClassifier.set("sources")
-    from(android.sourceSets.getByName<AndroidSourceSet>("main").java.srcDirs)
+    from(androidExtension.sourceSets.getByName<AndroidSourceSet>("main").java.srcDirs)
 }
 
-fun getExtraString(name: String) = ext[name]?.toString()
+fun getExtraString(name: String) =
+    ext[name]?.toString()
 
 fun groupId(): String = "tech.thdev"
 
