@@ -44,16 +44,19 @@ fun Modifier.keyboardHide(): Modifier = composed {
 
     fun clear() {
         focusManager.clearFocus()
-        keyboardVisibleDuringThisFocusSession = false
     }
 
     LaunchedEffect(keyboardVisible, hasFocus) {
         if (hasFocus) {
             if (keyboardVisible) {
                 keyboardVisibleDuringThisFocusSession = true
-            } else if (keyboardVisibleDuringThisFocusSession) {
-                clear()
+            } else {
+                if (keyboardVisibleDuringThisFocusSession) {
+                    clear()
+                }
             }
+        } else {
+            keyboardVisibleDuringThisFocusSession = false
         }
     }
 
@@ -61,14 +64,13 @@ fun Modifier.keyboardHide(): Modifier = composed {
         .onFocusEvent {
             if (hasFocus != it.hasFocus) {
                 hasFocus = it.hasFocus
-                if (hasFocus && keyboardVisible) {
-                    keyboardVisibleDuringThisFocusSession = false
-                }
             }
         }
         .pointerInput(Unit) {
             detectTapGestures {
-                clear()
+                if (hasFocus && keyboardVisible) {
+                    clear()
+                }
             }
         }
 }

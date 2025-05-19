@@ -8,14 +8,14 @@ Android Compose extension.
 - Android System UI Controller
 - ExWebView(View WebView).
 
-## Download Stable - compose 25.5.0
+## Download Stable - compose 25.5.1
 
-Use gradle - compose bom 2025.05.00, compose compiler k2, kotlin 2.1.21
+Use gradle - compose bom 2025.05.00, kotlin 2.1.21
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:25.5.0")
-implementation("tech.thdev:extensions-compose-system-ui-controller:25.5.0")
-implementation("tech.thdev:extensions-compose-web-view:25.5.0")
+implementation("tech.thdev:extensions-compose-keyboard-state:25.5.1")
+implementation("tech.thdev:extensions-compose-system-ui-controller:25.5.1")
+implementation("tech.thdev:extensions-compose-web-view:25.5.1")
 ```
 
 Release version are available in [Sonatyp's repository.](https://search.maven.org/search?q=tech.thdev)
