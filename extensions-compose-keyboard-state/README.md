@@ -10,12 +10,12 @@ To check the current visibility state of the keyboard, you can use `rememberKeyb
 ### Use scaffold modifier
 
 ```kotlin
- Scaffold(
-     modifier = Modifier
-         .imePadding()
-         .keyboardHide()
- ) {
- }
+Scaffold(
+    modifier = Modifier
+        .imePadding()
+        .keyboardHide()
+) {
+}
 ```
  
 ### when checking status

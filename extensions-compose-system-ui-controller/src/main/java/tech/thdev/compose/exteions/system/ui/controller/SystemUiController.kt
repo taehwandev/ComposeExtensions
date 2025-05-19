@@ -40,7 +40,7 @@ import androidx.core.view.WindowInsetsControllerCompat
  * colors within Jetpack Compose.
  */
 @Stable
-interface ExSystemUiController {
+interface SystemUiController {
 
     /**
      * Control for the behavior of the system bars. This value should be one of the
@@ -165,7 +165,7 @@ interface ExSystemUiController {
 }
 
 /**
- * Remembers a [ExSystemUiController] for the given [window].
+ * Remembers a [SystemUiController] for the given [window].
  *
  * If no [window] is provided, an attempt to find the correct [Window] is made.
  *
@@ -175,14 +175,14 @@ interface ExSystemUiController {
  * Second, we attempt to find [Window] for the [Activity] containing the [LocalView].
  *
  * If none of these are found (such as may happen in a preview), then the functionality of the
- * returned [ExSystemUiController] will be degraded, but won't throw an exception.
+ * returned [SystemUiController] will be degraded, but won't throw an exception.
  */
 @Composable
-fun rememberExSystemUiController(
+fun rememberSystemUiController(
     window: Window? = findWindow(),
-): ExSystemUiController {
+): SystemUiController {
     val view = LocalView.current
-    return remember(view, window) { AndroidExSystemUiController(view, window) }
+    return remember(view, window) { AndroidSystemUiController(view, window) }
 }
 
 @Composable
@@ -201,12 +201,12 @@ private tailrec fun Context.findWindow(): Window? =
  * A helper class for setting the navigation and status bar colors for a [View], gracefully
  * degrading behavior based upon API level.
  *
- * Typically you would use [rememberExSystemUiController] to remember an instance of this.
+ * Typically you would use [rememberSystemUiController] to remember an instance of this.
  */
-internal class AndroidExSystemUiController(
+internal class AndroidSystemUiController(
     private val view: View,
     private val window: Window?
-) : ExSystemUiController {
+) : SystemUiController {
     private val windowInsetsController = window?.let {
         WindowCompat.getInsetsController(it, view)
     }
