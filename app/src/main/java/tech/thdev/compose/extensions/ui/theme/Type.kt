@@ -1,4 +1,4 @@
-package tech.thdev.composekeyboardstate.ui.theme
+package tech.thdev.compose.extensions.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

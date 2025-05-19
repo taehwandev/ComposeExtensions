@@ -1,3 +1,10 @@
+## 25.5.0
+
+- 컴포즈 최신화
+- 키보드 상태 관리 최신화 및 함수명 변경
+  - `removeFocusWhenKeyboardIsHidden` > `keyboardHide`
+  - `keyboardState` > `rememberKeyboardVisible`
+
 ## 25.1.0
 
 - Change the version numbering to year.month.release order.
