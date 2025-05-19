@@ -1,35 +1,30 @@
 ## Summary
+You can use Compose Modifiers to close the keyboard and collect related events.
 
-Modifier for handling keyboard state.
+If you want to close the keyboard and clear focus, you can use `keyboardHide()`.
 
-You can know the open/closed state of the keyboard.
-If you register the modifier, the keyboard closes when you touch the background, and you can know the status.
+To check the current visibility state of the keyboard, you can use `rememberKeyboardVisible()`.
 
 ## Use Code
 
 ### Use scaffold modifier
 
 ```kotlin
-CompositionLocalProvider(
-     LocalMutableExKeyboardStateSourceOwner provides MutableExKeyboardStateSource()
-) {
-     Scaffold(
-         modifier = Modifier
-             .removeFocusWhenKeyboardIsHidden()
-     ) {
-     }
-}
+ Scaffold(
+     modifier = Modifier
+         .imePadding()
+         .keyboardHide()
+ ) {
+ }
 ```
  
 ### when checking status
 
 ```kotlin
-val keyboardState by mutableKeyboardStateSource.keyboardState()
+val keyboardState by rememberKeyboardVisible()
 
-DisposableEffect(showKeyboard) {
+LaunchedEffect(showKeyboard) { // Or DisposableEffect(keyboardState) if you want to react when keyboardState changes
     // Use keyboard state
-    onDispose {
-    }
 }
 ```
 

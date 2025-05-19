@@ -1,4 +1,4 @@
-package tech.thdev.composekeyboardstate
+package tech.thdev.compose.extensions
 
 import android.os.Bundle
 import android.widget.Toast
@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.AbsoluteRoundedCornerShape
 import androidx.compose.material3.Button
@@ -15,7 +16,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -24,11 +24,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import tech.thdev.compose.extensions.keyboard.state.MutableExKeyboardStateSource
-import tech.thdev.compose.extensions.keyboard.state.foundation.collectIsKeyboardAsState
-import tech.thdev.compose.extensions.keyboard.state.foundation.removeFocusWhenKeyboardIsHidden
-import tech.thdev.compose.extensions.keyboard.state.localowners.LocalMutableExKeyboardStateSourceOwner
-import tech.thdev.composekeyboardstate.ui.theme.ComposeKeyboardStateTheme
+import tech.thdev.compose.extensions.keyboard.state.foundation.rememberKeyboardVisible
+import tech.thdev.compose.extensions.keyboard.state.foundation.keyboardHide
+import tech.thdev.compose.extensions.ui.theme.ComposeKeyboardStateTheme
 
 class MainActivity : ComponentActivity() {
 
@@ -36,21 +34,18 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ComposeKeyboardStateTheme {
-                CompositionLocalProvider(
-                    LocalMutableExKeyboardStateSourceOwner provides MutableExKeyboardStateSource()
+                Scaffold(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .imePadding()
+                        .keyboardHide()
                 ) {
-                    Scaffold(
+                    // test aaa
+                    Greeting(
                         modifier = Modifier
                             .fillMaxSize()
-                            .removeFocusWhenKeyboardIsHidden()
-                    ) {
-                        // test aaa
-                        Greeting(
-                            modifier = Modifier
-                                .fillMaxSize()
-                                .padding(it)
-                        )
-                    }
+                            .padding(it)
+                    )
                 }
             }
         }
@@ -63,7 +58,7 @@ fun Greeting(
 ) {
     val typed = remember { mutableStateOf("") }
     val keyboardStateMessage = remember { mutableStateOf("") }
-    val keyboardShow by LocalMutableExKeyboardStateSourceOwner.current.collectIsKeyboardAsState()
+    val keyboardShow by rememberKeyboardVisible()
     LaunchedEffect(keyboardShow) {
         keyboardStateMessage.value = "Show keyboard".takeIf { keyboardShow } ?: "Hide keyboard"
     }
