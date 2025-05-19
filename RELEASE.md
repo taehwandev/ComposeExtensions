@@ -1,3 +1,7 @@
+## 25.5.1
+
+- Fixing the issue where the keyboard loses focus after being displayed
+
 ## 25.5.0
 
 - Latest Compose updates (2025.05.00)
