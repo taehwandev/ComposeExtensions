@@ -1,9 +1,11 @@
 ## 25.5.0
 
-- 컴포즈 최신화
-- 키보드 상태 관리 최신화 및 함수명 변경
+- Latest Compose updates (2025.05.00)
+- Enhanced keyboard state management and function name changes:
   - `removeFocusWhenKeyboardIsHidden` > `keyboardHide`
   - `keyboardState` > `rememberKeyboardVisible`
+- system ui controller
+  - `rememberExSystemUiController` > `rememberSystemUiController`
 
 ## 25.1.0
 

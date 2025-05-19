@@ -40,6 +40,7 @@ dependencies {
     compileOnly(libs.plugin.android.gradlePlugin)
     compileOnly(libs.plugin.compose.gradlePlugin)
     compileOnly(libs.plugin.kotlin.gradlePlugin)
+    compileOnly(libs.plugin.android.junit5)
 }
 
 tasks {

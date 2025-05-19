@@ -11,17 +11,20 @@ fun Project.configureComposeAndroid() {
         dependencies {
             implementation(findLibrary("kotlin-collectionsImmutable"))
 
-            implementation(findLibrary("compose-ui"))
-            implementation(findLibrary("compose-foundation"))
-            implementation(findLibrary("compose-material3"))
-            implementation(findLibrary("compose-runtime"))
-            implementation(findLibrary("compose-uiToolingPreview"))
-            implementation(findLibrary("compose-constraintLayout"))
-            implementation(findLibrary("compose-animation"))
+            implementation(platform(findLibrary("androidx-compose-bom")))
+            implementation(findLibrary("androidx-compose-ui"))
+            implementation(findLibrary("androidx-compose-foundation"))
+            implementation(findLibrary("androidx-compose-runtime"))
+            implementation(findLibrary("androidx-compose-ui-tooling-preview"))
+            implementation(findLibrary("androidx-compose-animation"))
+
+            implementation(findLibrary("androidx-compose-material3"))
+
+            implementation(findLibrary("androidx-compose-constraintLayout"))
 
             implementation(findLibrary("androidx-lifecycleRuntimeCompose"))
 
-            "debugRuntimeOnly"(findLibrary("compose-uiTooling"))
+            "debugRuntimeOnly"(findLibrary("androidx-compose-ui-tooling"))
         }
     }
 }

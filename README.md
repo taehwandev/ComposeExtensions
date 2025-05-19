@@ -8,14 +8,14 @@ Android Compose extension.
 - Android System UI Controller
 - ExWebView(View WebView).
 
-## Download Stable - compose 25.1.0
+## Download Stable - compose 25.5.0
 
-Use gradle - compose 1.7.6, compose compiler k2, kotlin 2.0.21
+Use gradle - compose bom 2025.05.00, compose compiler k2, kotlin 2.1.21
 
 ```kotlin
-implementation("tech.thdev:extensions-compose-keyboard-state:25.1.0")
-implementation("tech.thdev:extensions-compose-system-ui-controller:25.1.0")
-implementation("tech.thdev:extensions-compose-web-view:25.1.0")
+implementation("tech.thdev:extensions-compose-keyboard-state:25.5.0")
+implementation("tech.thdev:extensions-compose-system-ui-controller:25.5.0")
+implementation("tech.thdev:extensions-compose-web-view:25.5.0")
 ```
 
 Release version are available in [Sonatyp's repository.](https://search.maven.org/search?q=tech.thdev)
@@ -25,26 +25,21 @@ Release version are available in [Sonatyp's repository.](https://search.maven.or
 ### Use scaffold modifier
 
 ```kotlin
-CompositionLocalProvider(
-    LocalMutableExKeyboardStateSourceOwner provides MutableExKeyboardStateSource()
+Scaffold(
+    modifier = Modifier
+        .imePadding()
+        .keyboardHide()
 ) {
-    Scaffold(
-        modifier = Modifier
-            .removeFocusWhenKeyboardIsHidden()
-    ) {
-    }
 }
 ```
 
 ### when checking status
 
 ```kotlin
-val keyboardState by mutableKeyboardStateSource.keyboardState()
+val keyboardState by rememberKeyboardVisible()
 
-DisposableEffect(showKeyboard) {
+LaunchedEffect(showKeyboard) { // Or DisposableEffect(keyboardState) if you want to react when keyboardState changes
     // Use keyboard state
-    onDispose {
-    }
 }
 ```
 
@@ -52,7 +47,7 @@ DisposableEffect(showKeyboard) {
 
 ```kotlin
 // Remember a SystemUiController
-val systemUiController = rememberExSystemUiController()
+val systemUiController = rememberSystemUiController()
 
 DisposableEffect(systemUiController) {
     // Update all of the system bar colors to be transparent, and use
