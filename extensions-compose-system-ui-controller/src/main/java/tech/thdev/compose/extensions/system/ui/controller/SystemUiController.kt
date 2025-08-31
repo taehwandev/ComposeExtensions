@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package tech.thdev.compose.exteions.system.ui.controller
+package tech.thdev.compose.extensions.system.ui.controller
 
 import android.app.Activity
 import android.content.Context
